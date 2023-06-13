@@ -1,0 +1,329 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #45b3c0;
+}
+
+#root > header {
+  width: 100%;
+  height: 60px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+
+#root > header > img:nth-child(1) {
+  height: inherit;
+  margin-left: 32px;
+  cursor: pointer;
+  transition: all 500ms linear;
+}
+
+#root > header > img:nth-child(1):hover {
+  transform: rotateY(180deg);
+}
+
+
+#root > header > h1:nth-child(2) {
+  line-height: 60px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+    sans-serif;
+  color: #d38b2c;
+}
+
+#root > header > img:nth-child(3) {
+  height: 32px;
+  margin: auto 32px auto 0;
+  cursor: pointer;
+}
+
+#root > main {
+  display: flex;
+  height: max-content;
+  width: 100%;
+  background-color: #d38b2c;
+}
+
+#root > main > nav {
+  width: 115px;
+  height: content;
+  background-color: #1b1b1b;
+}
+
+#root > main > nav > ul {
+  margin-top: 100%;
+}
+
+#root > main > nav > ul > li {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-color: #d38b2c;
+  border-radius: 50%;
+  text-align: center;
+  margin: 40px 75px;
+}
+
+#root > main > nav > ul > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 70px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+    sans-serif;
+  border-radius: 50%;
+  transition: all 300ms linear;
+  box-shadow: #000 0 0 10px;
+}
+
+#root > main > nav > ul > li > a:hover {
+  box-shadow: none;
+  color: #1b1b1b;
+  font-weight: bold;
+}
+
+#root > main > nav > ul > li:nth-of-type(2) > a {
+  color: #1b1b1b;
+  font-weight: bold;
+  box-shadow: none;
+}
+
+#root > main > section.product {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+#root > main > section.product > nav {
+  display: none;
+}
+
+#root > main > section.product > div {
+  width: 530px;
+  height: 480px;
+  box-shadow: 0px 0px 20px #000;
+  border-radius: 16px;
+  margin: 160px 0;
+}
+
+#root > main > section.product > div > div.image {
+  width: 100%;
+  height: 75%;
+}
+
+#root > main > section.product > div > div.image > img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  transition: all 300ms linear;
+  cursor: pointer;
+}
+#root > main > section.product > div > div.image > img:hover{
+  transform: scale(1.02);
+  box-shadow: 0px 0px 20px #000;
+}
+
+#root > main > section.product > div > .prd {
+  width: 100%;
+  height: 25%;
+  background-color: #1b1b1b;
+  text-align: center;
+  padding-top: 15px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+#root > main > section.product > div > .prd > h1 {
+  padding: 4px 8px;
+  font-size: 22px;
+  color: #45b3c0;
+  margin: 6px 0;
+   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+    sans-serif;
+}
+
+#root > main > section.product > div > .prd > span:nth-child(2) {
+  background-color: #ddd018;
+  padding: 2px 6px;
+  font-size: 16px;
+  margin: 0 5px 0 10px;
+  cursor: pointer;
+  border-radius: 20%;
+  font-weight: bold;
+  color: #1b1b1b;
+  transition: all 300ms linear;
+}
+
+#root > main > section.product > div > .prd > span:nth-child(2):hover {
+  box-shadow: 0 0 3px #fff;
+}
+
+#root > main > section.product > div > .prd > button:nth-child(3) {
+  background-color: #2d4fab;
+  padding: 3px 7px;
+  font-size: 16px;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: 20%;
+  border: none;
+  font-weight: bold;
+  color: #1f1f1f;
+  transition: all 300ms linear;
+}
+
+#root > main > section.product > div > .prd > button:nth-child(3):hover {
+  box-shadow: 0 0 3px #fff;
+}
+
+#root > main > section.product > div > .prd > button:nth-child(4) {
+  background-color: rgb(95, 113, 161);
+  padding: 3px 9.2px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20%;
+  border: none;
+  font-weight: bold;
+  color: #1f1f1f;
+  transition: all 300ms linear;
+}
+
+#root > main > section.product > div > .prd > button:nth-child(4):hover {
+  box-shadow: 0 0 3px #fff;
+}
+
+
+#root > footer {
+  background-color: transparent;
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+}
+
+#root > footer > img {
+  width: 32px;
+  margin: 16px 10px 4px 10px;
+  cursor: pointer;
+  transition: all 600ms linear;
+}
+
+#root > footer > img:hover {
+  transform: rotate(360deg);
+  box-shadow: #fff 0 0 5px;
+  border-radius: 50%;
+}
+
+#root > footer > div{
+  width: 100%;
+  color: #d38b2c;
+  padding-bottom: 16px;
+  font-size: smaller;
+   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+    sans-serif;
+}
+
+/* ................................Responsive Start............................... */
+
+@media screen and (max-width: 1400px) {
+  #root > main > section.product > div {
+    width: 450px;
+    height: 420px;
+    margin: 80px 0;
+  }
+
+}
+
+@media screen and (max-width: 1160px) {
+  #root > main > section.product {
+    display: block;
+  }
+  #root > main > section.product > div {
+    width: 450px;
+    height: 420px;
+    margin: 50px auto;
+  }
+}
+
+
+@media screen and (max-width: 780px) {
+  #root > main > nav {
+    display: none;
+  }
+
+  #root > main > section.product > nav {
+    display: block;
+    width: 100%;
+  }
+
+  #root > main > section.product > nav > ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 5%;
+    margin: 16px 0;
+  }
+
+  #root > main > section.product > nav > ul > li > a {
+    font-size: 16px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: #000;
+    text-decoration: none;
+  }
+  #root > main > section.product > nav > ul > li > a:hover {
+    color: #fff;
+  }
+  #root > main > section.product > nav > ul > li:nth-of-type(2) > a {
+    color: #fff;
+  }
+
+  #root > main > section.product > div {
+    width: 320px;
+    height: 280px;
+    margin-top: 25px;
+  }
+  #root > main > section.product > div > .prd > h1 {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+
+  #root > main > section.product > div > .prd > span:nth-child(2) {
+    padding: 1px 4px;
+    font-size: 14px;
+  }
+  #root > main > section.product > div > .prd > button:nth-child(3) {
+    padding: 0.9px 4.8px;
+    font-size: 15px;
+  }
+  #root > main > section.product > div > .prd > button:nth-child(4) {
+    padding: 1px 7px;
+    font-size: 15px;
+  }
+  #root > main > section.product > div > .prd > button:nth-child(5) {
+    padding: 1.35px 7px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #root > main > section.product > div {
+    width: 250px;
+    height: 220px;
+  }
+
+  #root > main > section.product > div > .prd > h1 {
+    font-size: 12px;
+    margin-top: -6px;
+    padding: 0;
+    height: 30%;
+  }
+}
